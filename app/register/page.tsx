@@ -131,20 +131,15 @@ export default function RegisterPage() {
       <header className="bg-gradient-to-r from-navy to-navy-dark shadow-lg print:shadow-none">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-12 bg-gold rounded-full flex items-center justify-center font-bold text-navy">
-                N26
+            <a href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+              <div className="bg-gold rounded-lg px-3 py-2 flex items-center justify-center font-bold text-navy text-xs">
+                NATCON26
               </div>
               <div>
                 <h1 className="text-white text-xl font-bold">NATCON 2026</h1>
                 <p className="text-gold text-sm">Registration</p>
               </div>
-            </div>
-            {step !== 'confirmation' && (
-              <a href="/" className="text-gold hover:text-gold-light text-sm font-medium print:hidden">
-                ← Back to Home
-              </a>
-            )}
+            </a>
           </div>
         </div>
       </header>
@@ -169,7 +164,7 @@ export default function RegisterPage() {
 
           {step === 'forms' && (
             <div className="max-w-4xl mx-auto">
-              <div className="bg-white rounded-2xl shadow-xl p-6 md:p-8 mb-6">
+              <div className="bg-blue-50 rounded-2xl shadow-xl p-6 md:p-8 mb-6">
                 <h2 className="text-3xl font-bold text-navy mb-2">Registration Details</h2>
                 <p className="text-gray-600 mb-6">Fill in the information for each attendee</p>
 
@@ -204,13 +199,13 @@ export default function RegisterPage() {
               <div className="flex flex-col sm:flex-row gap-4 max-w-4xl mx-auto">
                 <button
                   onClick={() => setStep('count')}
-                  className="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold py-4 rounded-xl transition-all"
+                  className="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold py-4 rounded-lg transition-all"
                 >
                   ← Back
                 </button>
                 <button
                   onClick={handleFormsContinue}
-                  className="flex-1 bg-accent hover:bg-accent/90 text-white font-bold py-4 rounded-xl transition-all transform hover:scale-[1.02] shadow-lg"
+                  className="flex-1 bg-accent hover:bg-accent/90 text-white font-bold py-4 rounded-lg transition-all transform hover:scale-[1.02] shadow-lg"
                 >
                   Continue to Review
                 </button>

@@ -21,6 +21,11 @@ const config: Config = {
           DEFAULT: '#DC143C',
         },
       },
+      fontFamily: {
+        heading: ['var(--font-bricolage)', 'system-ui', 'sans-serif'],
+        body: ['var(--font-manrope)', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-manrope)', 'system-ui', 'sans-serif'],
+      },
     },
   },
   plugins: [],

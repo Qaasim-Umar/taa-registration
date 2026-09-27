@@ -10,7 +10,7 @@ interface AttendeeFormProps {
 
 export default function AttendeeForm({ attendee, index, onChange, errors }: AttendeeFormProps) {
   return (
-    <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 border-2 border-gray-100">
+    <div className="bg-blue-50 rounded-xl shadow-lg p-6 md:p-8 border-2 border-blue-100">
       <div className="flex items-center gap-3 mb-6">
         <div className="w-12 h-12 bg-gold rounded-full flex items-center justify-center">
           <span className="text-navy font-bold text-lg">{index + 1}</span>

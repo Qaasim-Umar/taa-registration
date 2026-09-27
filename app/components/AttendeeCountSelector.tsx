@@ -13,7 +13,7 @@ export default function AttendeeCountSelector({ count, onChange, onContinue, onB
 
   return (
     <div className="max-w-2xl mx-auto">
-      <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+      <div className="bg-blue-50 rounded-2xl shadow-xl p-8 md:p-12">
         <h2 className="text-3xl font-bold text-navy mb-3 text-center">
           How many people are you registering?
         </h2>
@@ -77,16 +77,16 @@ export default function AttendeeCountSelector({ count, onChange, onContinue, onB
           {onBack && (
             <button
               onClick={onBack}
-              className="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold py-4 rounded-xl transition-all"
+              className="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold py-4 rounded-lg transition-all"
             >
               ← Back to Home
             </button>
           )}
           <button
             onClick={onContinue}
-            className="flex-1 bg-accent hover:bg-accent/90 text-white font-bold text-lg py-4 rounded-xl transition-all transform hover:scale-[1.02] shadow-lg"
+            className="flex-1 bg-accent hover:bg-accent/90 text-white font-bold text-sm md:text-lg py-4 rounded-lg transition-all transform hover:scale-[1.02] shadow-lg"
           >
-            Continue to Registration Forms
+            Continue to Forms
           </button>
         </div>
       </div>

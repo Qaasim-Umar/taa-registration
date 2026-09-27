@@ -12,7 +12,11 @@
   }
   
   body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: var(--font-manrope), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-bricolage), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   }
 }
 
@@ -58,6 +62,14 @@
   }
   .shadow-gold {
     --tw-shadow-color: var(--gold);
+  }
+
+  .font-heading {
+    font-family: var(--font-bricolage), system-ui, sans-serif;
+  }
+
+  .font-body {
+    font-family: var(--font-manrope), system-ui, sans-serif;
   }
 }
 

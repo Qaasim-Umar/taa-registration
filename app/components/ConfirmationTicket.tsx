@@ -44,7 +44,7 @@ export default function ConfirmationTicket({ confirmedAttendees }: ConfirmationT
   return (
     <div className="max-w-5xl mx-auto">
       {/* Success Message */}
-      <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 mb-6 text-center print:shadow-none">
+      <div className="bg-blue-50 rounded-2xl shadow-xl p-8 md:p-12 mb-6 text-center print:shadow-none">
         <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
           <svg className="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -61,7 +61,7 @@ export default function ConfirmationTicket({ confirmedAttendees }: ConfirmationT
       </div>
 
       {/* Registration Summary */}
-      <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 mb-6 print:shadow-none">
+      <div className="bg-blue-50 rounded-2xl shadow-xl p-8 md:p-12 mb-6 print:shadow-none">
         <h2 className="text-2xl font-bold text-navy mb-6">Registration Summary</h2>
         <div className="grid md:grid-cols-3 gap-4 text-center">
           <div className="bg-gray-50 rounded-xl p-4">
@@ -82,7 +82,7 @@ export default function ConfirmationTicket({ confirmedAttendees }: ConfirmationT
       {/* Attendee Tickets */}
       <div className="space-y-6 mb-6">
         {confirmedAttendees.map((attendee, index) => (
-          <div key={attendee.registrationId} className="bg-white rounded-2xl shadow-xl overflow-hidden print:shadow-none print:break-inside-avoid">
+          <div key={attendee.registrationId} className="bg-blue-50 rounded-2xl shadow-xl overflow-hidden print:shadow-none print:break-inside-avoid">
             <div className="bg-gradient-to-r from-navy to-navy-dark p-6">
               <div className="flex items-center justify-between">
                 <div>
@@ -158,11 +158,11 @@ export default function ConfirmationTicket({ confirmedAttendees }: ConfirmationT
       </div>
 
       {/* Action Buttons */}
-      <div className="bg-white rounded-2xl shadow-xl p-8 print:hidden">
+      <div className="bg-blue-50 rounded-2xl shadow-xl p-8 print:hidden">
         <div className="flex flex-col sm:flex-row gap-4">
           <button
             onClick={handlePrint}
-            className="flex-1 bg-navy hover:bg-navy/90 text-white font-semibold py-4 rounded-xl transition-all flex items-center justify-center gap-2"
+            className="flex-1 bg-navy hover:bg-navy/90 text-white font-semibold py-4 rounded-lg transition-all flex items-center justify-center gap-2"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
@@ -171,7 +171,7 @@ export default function ConfirmationTicket({ confirmedAttendees }: ConfirmationT
           </button>
           <a
             href="/"
-            className="flex-1 bg-gold hover:bg-gold-light text-navy font-semibold py-4 rounded-xl transition-all text-center"
+            className="flex-1 bg-gold hover:bg-gold-light text-navy font-semibold py-4 rounded-lg transition-all text-center"
           >
             Return to Home
           </a>
